@@ -22,19 +22,13 @@
           <h2>Wakhi keyboard layout for web browsers</h2>
         </header>
 
-        <section id="downloads" class="clearfix">
-          <a href="https://github.com/rdxik/WakhiWebKeys/zipball/master" id="download-zip" class="button"><span>Download .zip</span></a>
-          <a href="https://github.com/rdxik/WakhiWebKeys/tarball/master" id="download-tar-gz" class="button"><span>Download .tar.gz</span></a>
-          <a href="https://github.com/rdxik/WakhiWebKeys" id="view-on-github" class="button"><span>View on GitHub</span></a>
-        </section>
-
         <hr>
 
         <section id="main_content">
           <h3>
 <a id="installation" class="anchor" href="#installation" aria-hidden="true"><span class="octicon octicon-link"></span></a>Installation</h3>
 
-<p>Right click on this link and bookmark it: ...</p>
+<p>Right click on this link and bookmark it: <a href='javascript:(function(c){function n(a){a||(a=window.event);var b=a.target||a.srcElement;3==b.nodeType&&(b=b.parentNode);a.target=b;a.which=a.which||a.charCode||a.keyCode;return a}function p(a){a=n(a);if(-1!==["INPUT","TEXTAREA"].indexOf(a.target.tagName)){var b=String.fromCharCode(a.which);if(l!=a.target)l=a.target,f=b,k=!1;else if(k)k=!1,f=null;else{if("\\"==b)return k=!0,f=null,a.preventDefault(),!1;if(null===f)f=b;else{if(void 0!==q[f+b]){var d=a.target,e=d.value,g;a:{if(d){if("selectionStart"in d){g=d.selectionStart; break a}if(c.selection){d.focus();g=c.selection.createRange();var h=c.selection.createRange().text.length;g.moveStart("character",-d.value.length);g=g.text.length-h;break a}}g=void 0}";"!=f&&(b=b.toLowerCase());b=q[f+b];d.value=e.substring(0,g-1)+b+e.substring(g);1<b.length&&(g+=b.length-1);e=g;d.createTextRange?(d=d.createTextRange(),d.move("character",e),d.select()):d.selectionStart?(d.focus(),d.setSelectionRange(e,e)):d.focus();f=null;a.preventDefault();return!1}f=-1!==codeStarts.indexOf(b)?b: null}}}}function r(a){a=n(a);if(-1!==["INPUT","TEXTAREA"].indexOf(a.target.tagName))switch(a.which){case 8:case 13:case 27:case 37:case 38:case 39:case 40:f=null,k=!1}}function s(){l=null}function t(){if(!c.getElementsByTagName("input").length&&!c.getElementsByTagName("textarea").length){h=c.createElement("div");var a=c.createElement("textarea");a.style.cssText="position:absolute;width:30%;height:30%;z-index:100;font-family:Lucida Grande;";h.appendChild(a);c.body.appendChild(h)}c.addEventListener("keypress", p);c.addEventListener("keydown",r);c.addEventListener("blur",s);m=!0;e.style.background="#0c0"}var e=null,h=null,m=!1,l=null,f=null,k=!1,q={cc:"\u010d\u0323",Cc:"\u010c\u0323",dd:"\u1e0d",Dd:"\u1e0c",gg:"\u0263\u030c",Gg:"\u0194\u030c",jj:"\u01f0\u0323",Jj:"J\u0323\u030c",ss:"\u1e63\u030c",Ss:"\u1e62\u030c",tt:"\u1e6d",Tt:"\u1e6c",uu:"\u0289",Uu:"\u0244",xx:"x\u030c",Xx:"X\u030c",zz:"\u1e93\u030c",Zz:"\u1e92\u030c",";c":"\u010d",";C":"\u010c",";d":"\u03b4",";D":"\u0394",";g":"\u0263",";G":"\u0194", ";j":"\u01f0",";J":"J\u030c",";s":"\u0161",";S":"\u0160",";t":"\u03d1",";T":"\u03b8",";z":"\u017e",";Z":"\u017d",dz:"\u0292",Dz:"\u01b7"};codeStarts="cdgjstuxzCDGJSTUXZ;";e=c.createElement("div");e.style.cssText="position:fixed;z-index:999;bottom:0;left:0;border:1px solid #000;";e.innerHTML="X\u030c";c.body.appendChild(e);e.addEventListener("click",function(){m?(c.removeEventListener("keypress",p),c.removeEventListener("keydown",r),c.removeEventListener("blur",s),h&&h.parentNode.removeChild(h),m= !1,e.style.background="#c00"):t()});t()})(document);'>WakhiWebKeys</a></p>
 
 <h3>
 <a id="usage" class="anchor" href="#usage" aria-hidden="true"><span class="octicon octicon-link"></span></a>Usage</h3>
@@ -44,14 +38,96 @@
 <p>If you use it on a blank page, or a page with no input fields, a new text input will be created.  You could use this to enter text and then copy and paste to another application, such as a word processor.</p>
 
 <h3>
+<a id="wakhi-keyboard-layout" class="anchor" href="#wakhi-keyboard-layout" aria-hidden="true"><span class="octicon octicon-link"></span></a>Wakhi keyboard layout</h3>
+
+<table>
+	<tr> <th>Key combinations</th> <th>Wakhi character</th> <th>Sample words</th> </tr>
+	<tr> <td>cc / Cc</td> <td>č̣ / Č̣</td> <td>Č̣eẓ̌em (eye)</td> </tr>
+	<tr> <td>dd / Dd</td> <td>ḍ / Ḍ</td> <td>Ḍox (thin)</td> </tr>
+	<tr> <td>gg / Gg</td> <td>Ɣ / ɣ</td> <td>Ɣaš (quarrel)</td> </tr>
+	<tr> <td>ss / Ss</td> <td>ṣ̌ / Ṣ̌</td> <td>Ṣ̌afṣ̌ (hair)</td> </tr>
+	<tr> <td>tt / Tt</td> <td>ṭ / Ṭ</td> <td>Ṭaz (bald)</td> </tr>
+	<tr> <td>uu / Uu</td> <td>ʉ / </td> <td>mr (age) / mʉr (apple)</td> </tr>
+	<tr> <td>xx / Xx</td> <td>x̌ / X̌</td> <td>X̌ʉy (sister)</td> </tr>
+	<tr> <td>zz / Zz</td> <td>ẓ̌ / Ẓ̌</td> <td>Ẓ̌uy (pond)</td> </tr>
+	<tr> <td>;c / ;C</td> <td>č / Č</td> <td>Čoy (tea)</td> </tr>
+	<tr> <td>;d / ;D</td> <td>δ / Δ</td> <td>Δast (hand)</td> </tr>
+	<tr> <td>;g / ;G</td> <td>ɣ̌ / Ɣ̌</td> <td>Ɣ̌aṣ̌ (mouth)</td> </tr>
+	<tr> <td>;j / ;J</td> <td>ǰ / J̌</td> <td>J̌ax (play)</td> </tr>
+	<tr> <td>;s / ;S</td> <td>š / Š</td> <td>šet (soil)</td> </tr>
+	<tr> <td>;t / ;T</td> <td>θ / Θ</td> <td>Θwak (to burn), θin (hot)</td> </tr>
+	<tr> <td>;z / ;Z</td> <td>ž / Ž</td> <td>Žarž (milk)</td> </tr>
+	<tr> <td>dz / Dz</td> <td>ʒ / Ʒ</td> <td>ʒuɣ̌ (yak)</td> </tr>
+</table>
+
+<p>Notes:
+	<ul>
+		<li>Schwa (&#x259;) has been omitted</li>
+		<li>Cyrillic Yeru (&#x42B;) has been replaced with Latin 'ʉ'</li>
+	</ul>
+</p>
+
+<h3>
+<a id="wakhi-alphabet" class="anchor" href="#wakhi-alphabet" aria-hidden="true"><span class="octicon octicon-link"></span></a>The Wakhi Alphabet</h3>
+
+<table>
+	<tr> <th>Character</th> <th>Examples</th> </tr>
+	<tr> <td>a / A </td> <td> Aram (lever), arbob (headman), alam (flag) </td> </tr>
+	<tr> <td>b / B </td> <td> Bodʉr (brave), bodšo (king), bimon (fraud) </td> </tr>
+	<tr> <td>c / C </td> <td> Cereng (how), cumer (how much/many) </td> </tr>
+	<tr> <td>č / Č </td> <td> Čiz (what), čerm (enter), čil (cloth), čilbiči (basin) </td> </tr>
+	<tr> <td>č̣ / Č̣ </td> <td> Č̣eẓ̌em (eye), č̣aw (go), č̣am (poke)</td> </tr>
+	<tr> <td>d / D </td> <td> Dard (pain), dur (belly), dam (back), dorʉw (medicine) </td> </tr>
+	<tr> <td>ḍ / Ḍ </td> <td> Ḍeḍang (a musical instrument), ḍos (collision), ḍox (thin)</td> </tr>
+	<tr> <td>δ / Δ </td> <td> Δast (hand), δus (wasp), δʉs (dough), δeng (grain)</td> </tr>
+	<tr> <td>e / E </td> <td> Ehson (indebtednes)</td> </tr>
+	<tr> <td>f / F </td> <td> Foyda (benefit), fil (trick), fuks (snake), firbi (fat)</td> </tr>
+	<tr> <td>g / G </td> <td> Gila (complaint), gew (close), gur (grave), gand (filth)</td> </tr>
+	<tr> <td>ɣ / Ɣ </td> <td> Ɣafč (very), ɣand (filth), ɣaš (quarrel), ɣrung (heavy/pregnant) </td> </tr>
+	<tr> <td>ɣ̌ / Ɣ̌ </td> <td> Ɣ̌aṣ̌ (mouth), ɣ̌eṣ̌ (masculine), ɣ̌iṣ̌ (ear), ɣ̌ar (stone), ɣ̌er (wool), ɣ̌ir (encircle) </td> </tr>
+	<tr> <td>h / H </td> <td> Hang (attitude), halol (not having taboo), himat (struggle) </td> </tr>
+	<tr> <td>i / I </td> <td> Intizor (waite), intizom (arrangement), išora (hint) </td> </tr>
+	<tr> <td>j / J </td> <td> Jwon (young), jʉma (Friday), jum (bowl) , jondor (living thing) </td> </tr>
+	<tr> <td>ǰ̣ / J̣̌ </td> <td> J̣̌uṣ̌ (stimulated), ǰ̣am (curve), ǰ̣ang (position), ǰ̣ʉmbeṣ̌ (rampage) </td> </tr>
+	<tr> <td>k / K </td> <td> Kerk (hen), kʉk (spring), kak (eye esp. of animals), kand (smile), kend (wife/lady) </td> </tr>
+	<tr> <td>l / L </td> <td> Lol (elder brother), lalm (wanderer), loš (silent), loša (weak), leṭ (late/idle)  </td> </tr>
+	<tr> <td>m / M </td> <td> Mum (grandma), mʉš (hide), moç (soup /feminine in gender esp. for inedible animals in Islam)</td> </tr>
+	<tr> <td>n / N </td> <td> Nan (mother), nun (sister-in-law), noroz (unpleased), nung (name)</td> </tr>
+	<tr> <td>o / O </td> <td> Olʉw (potato), omon (peace), ozmʉd (observation), Olim (scholar)</td> </tr>
+	<tr> <td>p / P </td> <td> Pup (grandpa), pʉδ (foot), pʉl (money), pokiza (clean), pemec (wear/put on) </td> </tr>
+	<tr> <td>q / Q </td> <td> Qaq (dried appricot), qorʉn (stingy), Qʉrbon </td> </tr>
+	<tr> <td>r / R </td> <td> Rand (give), rʉnḍʉy (jump), rewz (jump), rost (right), rʉli (rule) </td> </tr>
+	<tr> <td>s / S </td> <td> San (climb), sʉma (search/find out), sʉr (cold), sʉd (profit), sakatar (secretary) </td> </tr>
+	<tr> <td>š / Š </td> <td> Šer (lion), šupr (night-stay), šur (noise), šarm (shame), širin (sweet)</td> </tr>
+	<tr> <td>ṣ̌ / Ṣ̌ </td> <td> Ṣ̌oboṣ̌ (thanks), ṣ̌apik (bread), ṣ̌ur (salty), ṣ̌afṣ̌ (hair), ṣ̌ʉw (black) </td> </tr>
+	<tr> <td>t / T </td> <td> Tat (father), trozʉw (balance), tumer (this much), tinen (yours)</td> </tr>
+	<tr> <td>ṭ / Ṭ </td> <td> Ṭaz (bald), ṭung (hard), ṭor (walnut)</td> </tr>
+	<tr> <td>θ / Θ </td> <td> Θaw (burn), θetk (burnt), θin (hot), θoṭ (lizard), θʉwn (to burn) </td> </tr>
+	<tr> <td>u / U </td> <td> Puṭ (short), pus (castrated male-sheep) </td> </tr>
+	<tr> <td>v / V </td> <td> Voyn (light), voč (aunt), vul (good-smell), </td> </tr>
+	<tr> <td>w / W </td> <td> Wez (come), woz (and), wuz (I), wa (bad smell), wʉrawg (wave)</td> </tr>
+	<tr> <td>X / X </td> <td> Xašč (wet), xew (severely weeping), xur (donkey), xčir (mule) </td> </tr>
+	<tr> <td>x̌ / X̌ </td> <td> X̌ʉy (sister), x̌ʉynan (woman), x̌an (say), x̌iδ (steep)</td> </tr>
+	<tr> <td>Y / Y </td> <td> Yez (yesterday), yor (companion), yower (for him/her), yir (son) </td> </tr>
+	<tr> <td>Z / Z </td> <td> Za/zman (child), zway (wrap), zvey (jock), zur (strong), zʉlm (oppression)</td> </tr>
+	<tr> <td>ž / Ž </td> <td> Žarž (milk), žaw (grain), žindag (story) </td> </tr>
+	<tr> <td>ẓ̌ / Ẓ̌ </td> <td> Ẓ̌ʉmak (moon), ẓ̌ʉnen (mine), ẓ̌ʉ (my)</td> </tr>
+	<tr> <td>ʒ / Ʒ </td> <td> Ʒuɣ̌ (yak), ʒereng (like this), ʒi (just for nothing)</td> </tr>
+	<tr> <td>ʉ /  </td> <td> ṣ̌tʉr (camel), ʉmr (age) </td> </tr>
+</table>
+
+<p>Credit for the above table goes to FAB, M. Phil, Anthropology, University of Peshawar.</p>
+
+<h3>
 <a id="project-status" class="anchor" href="#project-status" aria-hidden="true"><span class="octicon octicon-link"></span></a>Project status</h3>
 
 <p>This is the first release, and may not work in all browsers or on all web pages.  It has been tested in Firefox on Linux, and works with Facebook chat.  Please let me know if you have any issues using this tool.</p>
+        </section>
 
-<h3>
-<a id="wakhi-keyboard-layout" class="anchor" href="#wakhi-keyboard-layout" aria-hidden="true"><span class="octicon octicon-link"></span></a>Wakhi keyboard layout</h3>
-
-<p>To be added...</p>
+        <section id="downloads" class="clearfix">
+          <a href="https://github.com/rdxik/WakhiWebKeys/zipball/master" id="download-zip" class="button"><span>Download .zip</span></a>
+          <a href="https://github.com/rdxik/WakhiWebKeys/tarball/master" id="download-tar-gz" class="button"><span>Download .tar.gz</span></a>
+          <a href="https://github.com/rdxik/WakhiWebKeys" id="view-on-github" class="button"><span>View on GitHub</span></a>
         </section>
 
         <footer>
