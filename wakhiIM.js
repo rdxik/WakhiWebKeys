@@ -69,7 +69,8 @@
 		e = getEvent(e);
 		if (['INPUT','TEXTAREA'].indexOf(e.target.tagName)===-1) return;
 
-		var c = String.fromCharCode(e.which);
+		var	c = String.fromCharCode(e.which),
+			code;
 		if (prevInput != e.target) {
 			prevInput = e.target;
 			prevChar = c;
@@ -91,13 +92,13 @@
 		else if (prevChar === null) {
 			prevChar = c;
 		}
-		else if (codes[prevChar+c] !== undefined) {
+		else if ((code=codes[prevChar+c]) ||
+			 (prevChar != ';' && (code=codes[prevChar+c.toLowerCase()]))
+		) {
 			// Replace the text under the cursor with the new text.
 			var obj = e.target;
 			var val = obj.value;
 			var pos = getCursorPosition(obj);
-			if (prevChar != ';') c = c.toLowerCase();
-			var code = codes[prevChar+c];
 			obj.value=val.substring(0, pos-1) + code + val.substring(pos);
 			if (code.length>1) pos += code.length - 1;
 			setCaretPosition(obj,pos);
